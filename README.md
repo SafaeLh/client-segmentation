@@ -17,19 +17,19 @@ Cet ensemble de fichiers contiennent des données de comportement pour 5 mois (o
 
 **Voici les différents notebooks** : 
 
-•	1-clean_transform_FE : une analyse préliminaire pour comprendre la structure et les types de colonnes de données est effectuée dans ce fichier. Suivi d’un nettoyage et transformation de données (traitements des valeurs manquantes, gestion de doublons, vérifications des colonnes). Enfin, afin de créer un ensemble complet de données centrées sur le client pour le regroupement, les fonctionnalités basées sur le client ont été créés (Caractéristiques RFM, comportementales, saisonnalité et tendances)
+•	[1-clean_transform_FE](https://github.com/SafaeLh/client-segmentation/edit/main/README.md#:~:text=1%2D-,clean_transform_FE,-.ipynb) : une analyse préliminaire pour comprendre la structure et les types de colonnes de données est effectuée dans ce fichier. Suivi d’un nettoyage et transformation de données (traitements des valeurs manquantes, gestion de doublons, vérifications des colonnes). Enfin, afin de créer un ensemble complet de données centrées sur le client pour le regroupement, les fonctionnalités basées sur le client ont été créés (Caractéristiques RFM, comportementales, saisonnalité et tendances)
 
 
-•	2-data_preprocessing : un travail de preprocessing est fait sur notre nouvelle base de données axées sur le client (détection et traitement des valeurs aberrantes, analyse de corrélation, mise à l’échelle des différentes caractéristiques, réduction de la dimensionnalité avec PCA et kernelPCA)
+•	[2-data_preprocessing](https://github.com/SafaeLh/client-segmentation/edit/main/README.md#:~:text=2%2D-,data_preprocessing,-.ipynb) : un travail de preprocessing est fait sur notre nouvelle base de données axées sur le client (détection et traitement des valeurs aberrantes, analyse de corrélation, mise à l’échelle des différentes caractéristiques, réduction de la dimensionnalité avec PCA et kernelPCA)
 
 
-•	3-clustering : le regroupement a été fait sur 3 données pour comparaison (les données originales, les données transformées avec PCA et les données transformées en utilisant le KERNEL). Dans cette étude deux algorithmes sont comparés : K-means clustering, the Gaussian mixture model (GMM). Pour l’examen de la qualité des différents algorithmes 3 mesures sont calculées (Score de silhouette, Score Calinski Harabasz, Score de Davies Bouldin)
+•	[3-clustering](https://github.com/SafaeLh/client-segmentation/edit/main/README.md#:~:text=3%2D-,clustering,-.ipynb) : le regroupement a été fait sur 3 données pour comparaison (les données originales, les données transformées avec PCA et les données transformées en utilisant le KERNEL). Dans cette étude deux algorithmes sont comparés : K-means clustering, the Gaussian mixture model (GMM). Pour l’examen de la qualité des différents algorithmes 3 mesures sont calculées (Score de silhouette, Score Calinski Harabasz, Score de Davies Bouldin)
 
 
 Bien que GMM ait un meilleur Silhouette Score, K-means a eu des scores Calinski Harabasz et Davies Bouldin plus favorables après l'application de PCA. En général, ces scores suggèrent que K-means offre des clusters plus distincts et moins dispersés que GMM. Ainsi, **K-means semble globalement fournir de meilleurs résultats de clustering par rapport à GMM dans ce cas particulier**.
 
 
-•	4-clusters_analysis : Dans cette section, l’analyser les caractéristiques de chaque cluster identifié par l'algorithme K-means sur les données réduites avec PCA afin de comprendre les comportements et les préférences distincts des différents segments de clientèle et de dresser le profil de chaque groupe afin d'identifier les traits clés qui définissent les clients de chaque groupe.
+•	[4-clusters_analysis](https://github.com/SafaeLh/client-segmentation/edit/main/README.md#:~:text=4%2D-,clusters_analysis,-.ipynb) : Dans cette section, l’analyser les caractéristiques de chaque cluster identifié par l'algorithme K-means sur les données réduites avec PCA afin de comprendre les comportements et les préférences distincts des différents segments de clientèle et de dresser le profil de chaque groupe afin d'identifier les traits clés qui définissent les clients de chaque groupe.
 
 
 **Output** : 
