@@ -1,6 +1,6 @@
-# client-segmentation
+# Analyse de la Segmentation Client : Réduction de Dimensionnalité et Comparaison des Algorithmes de Regroupement
 
-**Objectif** : 
+##Objectif : 
 
 Développer un modèle de segmentation de la clientèle pour améliorer les processus de prise de décision dans le secteur du commerce de détail. 
 
@@ -8,7 +8,7 @@ L'objectif est de transformer les données transactionnelles en un ensemble axé
 
 >Develop a customer segmentation model to enhance decision-making processes in the retail sector. Our aim is to transform transactional data into customer-focused datasets by creating new features, facilitating customer segmentation into distinct groups using clustering algorithms. This approach will provide deeper insights into the profiles and preferences of different customer segments.
 
-**Dataset** :
+##Dataset :
 
 Ce projet utilise des données provenant d'une boutique en ligne de cosmétiques collectées par le projet Open CDP ! [données ici](https://www.kaggle.com/datasets/mkechinov/ecommerce-events-history-in-cosmetics-shop?select=2019-Dec.csv)
 
@@ -16,7 +16,7 @@ Ce projet utilise des données provenant d'une boutique en ligne de cosmétiques
 Cet ensemble de fichiers couvrent 5 mois (oct 2019 - fév 2020) totalisant environ 4 millions de lignes par fichier. Seuls les événements *cart* et *purchase* ont été sélectionnés pour analyser ces comportements avant d'être combinés en un fichier unique.
 
 
-**Voici les différents notebooks** : 
+##Voici les différents notebooks : 
 
 Ce repo présente un ensemble de 4 Jupyter Notebooks démontrant le processus pour la segmentation de la clientèle:
 
@@ -29,13 +29,13 @@ Ce repo présente un ensemble de 4 Jupyter Notebooks démontrant le processus po
 •	[3-clustering](https://github.com/SafaeLh/client-segmentation/blob/main/3-clustering.ipynb) : le regroupement a été fait sur 3 données pour comparaison (les données originales, les données transformées avec PCA et les données transformées en utilisant le KERNEL). Dans cette étude deux algorithmes sont comparés : K-means clustering, the Gaussian mixture model (GMM). Pour l’examen de la qualité des différents algorithmes 3 mesures sont calculées (Score de silhouette, Score Calinski Harabasz, Score de Davies Bouldin)
 
 
-Bien que GMM ait un meilleur Silhouette Score, K-means a eu des scores Calinski Harabasz et Davies Bouldin plus favorables après l'application de PCA. En général, ces scores suggèrent que K-means offre des clusters plus distincts et moins dispersés que GMM. Ainsi, **K-means semble globalement fournir de meilleurs résultats de clustering par rapport à GMM dans ce cas particulier**.
+> Bien que GMM ait un meilleur Silhouette Score, K-means a eu des scores Calinski Harabasz et Davies Bouldin plus favorables après l'application de PCA. En général, ces scores suggèrent que K-means offre des clusters plus distincts et moins dispersés que GMM. Ainsi, **K-means semble globalement fournir de meilleurs résultats de clustering par rapport à GMM dans ce cas particulier**.
 
 
 •	[4-clusters_analysis](https://github.com/SafaeLh/client-segmentation/blob/main/4-clusters_analysis.ipynb) : Dans cette section, l’analyser les caractéristiques de chaque cluster identifié par l'algorithme K-means sur les données réduites avec PCA afin de comprendre les comportements et les préférences distincts des différents segments de clientèle et de dresser le profil de chaque groupe afin d'identifier les traits clés qui définissent les clients de chaque groupe.
 
 
-**Output** : 
+##Output : 
  ![newplot](https://github.com/user-attachments/assets/242f82c3-430f-4b4c-9b31-d4720ec2e156)
 
 
