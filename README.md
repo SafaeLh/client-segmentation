@@ -2,20 +2,23 @@
 
 **Objectif** : 
 
-Nous visons à développer un modèle de segmentation de la clientèle afin d'améliorer les processus de prise de décision dans le secteur du commerce de détail
+Développer un modèle de segmentation de la clientèle pour améliorer les processus de prise de décision dans le secteur du commerce de détail. 
 
-Notre objectif est de convertir les données transactionnelles en un ensemble de données axées sur le client en créant de nouvelles caractéristiques. Cela facilitera la segmentation des clients en groupes distincts à l'aide de certains algorithmes de regroupement dont on effectuera la comparaison, nous permettant ainsi de mieux comprendre les profils et les préférences des différents groupes de clients.
+L'objectif est de transformer les données transactionnelles en un ensemble axé sur le client grâce à la création de nouvelles caractéristiques, facilitant la segmentation des clients en groupes distincts via des algorithmes de regroupement (dont on effectuera la comparaison) et permettant une meilleure compréhension des profils et préférences des différents groupes de clients
+
+>Develop a customer segmentation model to enhance decision-making processes in the retail sector. Our aim is to transform transactional data into customer-focused datasets by creating new features, facilitating customer segmentation into distinct groups using clustering algorithms. This approach will provide deeper insights into the profiles and preferences of different customer segments.
 
 **Dataset** :
 
-Ce repo présente un ensemble de Jupyter Notebooks démontrant le processus pour la segmentation de la clientèle d'une boutique en ligne de cosmétiques de taille moyenne collectées par le projet Open CDP.
-[link data](https://www.kaggle.com/datasets/mkechinov/ecommerce-events-history-in-cosmetics-shop?select=2019-Dec.csv)
+Ce projet utilise des données provenant d'une boutique en ligne de cosmétiques collectées par le projet Open CDP ! [données ici](https://www.kaggle.com/datasets/mkechinov/ecommerce-events-history-in-cosmetics-shop?select=2019-Dec.csv)
 
 
-Cet ensemble de fichiers contiennent des données de comportement pour 5 mois (oct 2019 - fév 2020) pour environ 4 millions de lignes chacun. En chaque fichier on a selectionné que les types d'événement ( ***cart , purchase*** ) pour analyser ces deux comportements, puis les combiner en un seul fichier qui va d'octobre 2019 à février 2020.
+Cet ensemble de fichiers couvrent 5 mois (oct 2019 - fév 2020) totalisant environ 4 millions de lignes par fichier. Seuls les événements *cart* et *purchase* ont été sélectionnés pour analyser ces comportements avant d'être combinés en un fichier unique.
 
 
 **Voici les différents notebooks** : 
+
+Ce repo présente un ensemble de 4 Jupyter Notebooks démontrant le processus pour la segmentation de la clientèle:
 
 •	[1-clean_transform_FE](https://github.com/SafaeLh/client-segmentation/blob/main/1-clean_transform_FE.ipynb) : une analyse préliminaire pour comprendre la structure et les types de colonnes de données est effectuée dans ce fichier. Suivi d’un nettoyage et transformation de données (traitements des valeurs manquantes, gestion de doublons, vérifications des colonnes). Enfin, afin de créer un ensemble complet de données centrées sur le client pour le regroupement, les fonctionnalités basées sur le client ont été créés (Caractéristiques RFM, comportementales, saisonnalité et tendances)
 
